@@ -1,0 +1,62 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header {
+    background-color: black;
+    height: 400px;
+}
+
+
+.left {float:left}
+.right {float:right}
+.clear {clear:both}
+
+#header div {
+    display: inline;
+}
+
+#header div img {
+    width: auto;
+    height: 100%;
+}
+
+
+#description, #contact {
+    float: left;
+    display: inline;
+    width: 46%;
+    min-width: 500px;
+    color: 157044;
+    font-size: larger;
+    padding: 20px;   
+}
+
+p {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+td {
+    padding: 0px 20px 5px 0px;
+}
+
+#mail-addr {
+    font-size: xx-large;
+}
+
+#name {
+    color: 157044;
+    font-size: x-large;
+}
+
+#mail-addr a {
+    color: #00df00;
+}
+
+#mail-addr a:hover {
+    color: #00c000;
+}
+
