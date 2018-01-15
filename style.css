@@ -1,32 +1,49 @@
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-    padding: 0px;
-    margin: 0px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 #header {
     background-color: black;
-    height: 400px;
-}
-
-
-.left {float:left}
-.right {float:right}
-.clear {clear:both}
-
-#header div {
-    display: inline;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #header div img {
     width: auto;
-    height: 100%;
+    height: 400px;
 }
 
+@media only screen and (max-width: 1400px) { /* This is the width of the divs */
+    #lights {
+        display: none;
+    }
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 #description, #contact {
-    float: left;
-    display: inline;
+
     width: 46%;
     min-width: 500px;
     color: 157044;
@@ -43,20 +60,34 @@ td {
     padding: 0px 20px 5px 0px;
 }
 
-#mail-addr {
+#contact .mail-addr {
     font-size: xx-large;
 }
 
-#name {
+#contact .name {
     color: 157044;
     font-size: x-large;
 }
 
-#mail-addr a {
+.mail-addr a {
     color: #00df00;
 }
 
 #mail-addr a:hover {
     color: #00c000;
+}
+
+/**
+ * Footer Styles
+ */
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
