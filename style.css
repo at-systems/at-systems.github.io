@@ -20,7 +20,7 @@ body {
 
 #header {
     background-color: black;
-    min-height: 400px;
+
     display: flex;
     justify-content: space-between;
 }
@@ -28,6 +28,7 @@ body {
 #header div img {
     width: auto;
     height: 400px;
+    display: block;
 }
 
 @media only screen and (max-width: 1400px) { /* This is the width of the divs */
@@ -50,7 +51,7 @@ body {
 
     width: 46%;
     min-width: 500px;
-    color: 157044;
+    color: #157044;
     font-size: larger;
     padding: 20px;   
 }
@@ -69,7 +70,7 @@ td {
 }
 
 #contact .name {
-    color: 157044;
+    color: #157044;
     font-size: x-large;
 }
 
