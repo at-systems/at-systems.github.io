@@ -22,7 +22,6 @@ body {
     background-color: black;
 
     display: flex;
-    justify-content: space-between;
 }
 
 #header div img {
@@ -39,6 +38,25 @@ body {
     #header {
         justify-content: center;
     }
+
+    #description, #contact {
+        width: 92%;
+    }   
+}
+
+@media only screen and (min-width: 1400px) { /* This is the width of the divs */
+    #lights {
+        display: block;
+    }
+
+    #header {
+        justify-content: space-between;
+    }
+
+    #description, #contact {
+        width: 46%;
+    }
+    
 }
 
 #content {
@@ -49,7 +67,6 @@ body {
 
 #description, #contact {
 
-    width: 46%;
     min-width: 500px;
     color: #157044;
     font-size: larger;
